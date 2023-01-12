@@ -2,27 +2,20 @@ import React, { useState } from "react"
 import { users } from "../util/data"
 
 export default function Login() {
-    const [userName, setuserName] = useState("");
-    const [password, setPassword] = useState("");
+
     function loginHandler(e) {
         e.preventDefault();
-        setuserName(e.target.userName.value);
-        setPassword(e.target.password.value);
-    }
 
-    function loginHandler(userName, password) {
-        users.map((users) => {
-          if(userName === users.userName && password === users.password) {
-            return alert("Yes");
+        users.map((user) => {
+          if(e.target.userName.value == user.userName && e.target.password.value == user.password) {
+            return console.log("Yes")
           }else {
-            return alert("NO");
+            return console.log("No")
           }
         })
-      }
+    }
 
-    console.log(userName);
-    console.log(password);
-    
+   
 
     return (
         <div>

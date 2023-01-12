@@ -6,8 +6,8 @@ import { MENUS, users } from "./util/data"
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 
-function App() {
-  
+function App() {  
+
   return (
     <div className="App">
       <Header/>

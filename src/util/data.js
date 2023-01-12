@@ -4,4 +4,4 @@ export const MENUS = [
     {name: "LOGIN", url: "/login"},
 ];
 
-export const users = [{userName: "Baldan", password: 123}];
+export const users = [{userName: "Baldan", password: "123"}];
