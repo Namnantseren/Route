@@ -2,10 +2,8 @@ import React, { useState } from "react"
 import { users } from "../util/data"
 
 export default function Login() {
-
     function loginHandler(e) {
         e.preventDefault();
-
         users.map((user) => {
           if(e.target.userName.value == user.userName && e.target.password.value == user.password) {
             return console.log("Yes")
@@ -14,8 +12,6 @@ export default function Login() {
           }
         })
     }
-
-   
 
     return (
         <div>
